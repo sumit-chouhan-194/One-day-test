@@ -1,68 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=Josefin+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 .ff_playfair {
   font-family: "Playfair Display", "sans-serif";
 }
 .ff_Josefin {
   font-family: "Josefin Sans", "sans-serif";
 }
-.top_3_card_shadow{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);}
+.ff_Chonburi {
+  font-family: "Chonburi", sans-serif;
+}
+.top_3_card_shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
 /* accrodian */
 
 /* Core styles/functionality */
 .tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  .tab__content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.35s;
-  }
-  .tab input:checked ~ .tab__content {
-    max-height: 10rem;
-  }
-  
-  /* Visual styles */
-  .accordion {
-    color: var(--theme);
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
-  .tab__label,
-  .tab__close {
-    display: flex;
-    align-items: center;
-    color: white;
-    background: var(--theme);
-    cursor: pointer;
-  }
-  .tab__label {
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .tab__label::after {
-    content: "\276F";
-    width: 1em;
-    height: 1em;
-    text-align: center;
-    transform: rotate(90deg);
-    transition: all 0.35s;
-  }
-  .tab input:checked + .tab__label::after {
-    transform: rotate(270deg);
-  }
-  .tab__content p {
-    margin: 0;
-    padding: 1rem;
-  }
-  .tab__close {
-    justify-content: flex-end;
-    padding: 0.5rem 1rem;
-    font-size: 0.75rem;
-  }
-  .accordion--radio {
-    --theme: var(--secondary);
-  }
- 
-  
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+  color: var(--theme);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tab__label,
+.tab__close {
+  display: flex;
+  align-items: center;
+  color: white;
+  background: var(--theme);
+  cursor: pointer;
+}
+.tab__label {
+  justify-content: space-between;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+.accordion--radio {
+  --theme: var(--secondary);
+}
