@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+<div class="max-w-[800px] mx-auto">
+    <!-- Accordion Container -->
+    <div class="space-y-2">
+        <!-- Accordion Item 1 -->
+        <div class="border p-4 rounded">
+            <!-- Accordion Header 1 -->
+            <div onclick="toggleAccordion('accordion1')" class="cursor-pointer flex items-center">
+                <span class="font-semibold">Lorem Ipsum is simply dummy text of the printing ?</span>
+                <svg id="icon1" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <!-- Accordion Content 1 -->
+            <div id="accordion1" class="mt-2 hidden">
+                <p class="text-gray-700">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+            </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="border p-4 rounded">
+            <!-- Accordion Header 1 -->
+            <div onclick="toggleAccordion('accordion2')" class="cursor-pointer flex items-center">
+                <span class="font-semibold">Lorem Ipsum is simply dummy text of the printing ?</span>
+                <svg id="icon2" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <!-- Accordion Content 1 -->
+            <div id="accordion2" class="mt-2 hidden">
+                <p class="text-gray-700">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+            </div>
+        </div>
+        <div class="border p-4 rounded">
+            <!-- Accordion Header 1 -->
+            <div onclick="toggleAccordion('accordion3')" class="cursor-pointer flex items-center">
+                <span class="font-semibold">Lorem Ipsum is simply dummy text of the printing ?</span>
+                <svg id="icon3" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <!-- Accordion Content 1 -->
+            <div id="accordion3" class="mt-2 hidden">
+                <p class="text-gray-700">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+            </div>
+        </div>
+        <div class="border p-4 rounded">
+            <!-- Accordion Header 1 -->
+            <div onclick="toggleAccordion('accordion4')" class="cursor-pointer flex items-center">
+                <span class="font-semibold">Lorem Ipsum is simply dummy text of the printing ?</span>
+                <svg id="icon4" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+            <!-- Accordion Content 1 -->
+            <div id="accordion4" class="mt-2 hidden">
+                <p class="text-gray-700">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAccordion(accordionId) {
+        const accordion = document.getElementById(accordionId);
+        const icon = document.getElementById('icon' + accordionId.slice(-1));
+
+        if (accordion.style.display === 'block') {
+            accordion.style.display = 'none';
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            accordion.style.display = 'block';
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+</script>
+
+</body>
+</html>

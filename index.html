@@ -1600,49 +1600,70 @@
     <!-- faqs -->
     <div class="container xl:max-w-[1140px] mx-auto px-5 xl:px-0 pt-[48px] lg:pt-[60px]">
       <h3
-      class="ff_Josefin text-[32px] sm:text-[40px] lg:text-[50px] text-black leading-normal font-bold text-center pb-[34px]"
-    >
-     FAQ
-    </h3>
-      <div class="accordion">
-        <div class="tab text-black border border-[#E5E5E5] rounded-[10px]">
-          <input type="checkbox" name="accordion-1" id="cb1" checked>
-          <label for="cb1" class="tab__label text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</label>
-          <div class="tab__content">
-            <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Lorem Ipsum is simply dummy text of the printing ?</p>
+      class="ff_Josefin text-[32px] sm:text-[40px] lg:text-[50px] text-black leading-normal font-bold text-center pb-[34px]">FAQ</h3>
+      <!-- Accordion Container -->
+      <div class="space-y-2">
+          <!-- Accordion Item 1 -->
+          <div class="border rounded-[10px] p-4">
+              <!-- Accordion Header 1 -->
+              <div onclick="toggleAccordion('accordion1')" class="cursor-pointer flex items-center">
+                  <span class=" text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</span>
+                  <svg id="icon1" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <!-- Accordion Content 1 -->
+              <div id="accordion1" class="mt-2 hidden">
+                  <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+              </div>
           </div>
-        </div>
-        <div class="tab text-black border border-[#E5E5E5] rounded-[10px] mt-3">
-          <input type="checkbox" name="accordion-2" id="cb2" checked>
-          <label for="cb2" class="tab__label text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</label>
-          <div class="tab__content">
-            <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Lorem Ipsum is simply dummy text of the printing ?</p>
+  
+          <!-- Accordion Item 2 -->
+          <div class="border rounded-[10px] p-4">
+              <!-- Accordion Header 1 -->
+              <div onclick="toggleAccordion('accordion2')" class="cursor-pointer flex items-center">
+                  <span class="text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</span>
+                  <svg id="icon2" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <!-- Accordion Content 1 -->
+              <div id="accordion2" class="mt-2 hidden">
+                  <p class="ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+              </div>
           </div>
-        </div>
-        <div class="tab text-black border border-[#E5E5E5] rounded-[10px] mt-3">
-          <input type="checkbox" name="accordion-3" id="cb3" checked>
-          <label for="cb3" class="tab__label text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</label>
-          <div class="tab__content">
-            <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Lorem Ipsum is simply dummy text of the printing ?</p>
+          <div class="border rounded-[10px] p-4">
+              <!-- Accordion Header 1 -->
+              <div onclick="toggleAccordion('accordion3')" class="cursor-pointer flex items-center">
+                  <span class=" text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</span>
+                  <svg id="icon3" class="w-4 h-4 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <!-- Accordion Content 1 -->
+              <div id="accordion3" class="mt-2 hidden">
+                  <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+              </div>
           </div>
-        </div>
-        <div class="tab text-black border border-[#E5E5E5] rounded-[10px] mt-3">
-          <input type="checkbox" name="accordion-4" id="cb4" checked>
-          <label for="cb4" class="tab__label text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</label>
-          <div class="tab__content">
-            <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Lorem Ipsum is simply dummy text of the printing ?</p>
+          <div class="border rounded-[10px] p-4">
+              <!-- Accordion Header 1 -->
+              <div onclick="toggleAccordion('accordion4')" class="cursor-pointer flex items-center">
+                  <span class=" text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</span>
+                  <svg id="icon4" class="w-4 h-4 ml-auto" fill="none" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <!-- Accordion Content 1 -->
+              <div id="accordion4" class="mt-2 hidden">
+                  <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+              </div>
           </div>
-        </div>
-        <div class="tab text-black border border-[#E5E5E5] rounded-[10px] mt-3">
-          <input type="checkbox" name="accordion-5" id="cb5" checked>
-          <label for="cb5" class="tab__label text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</label>
-          <div class="tab__content">
-            <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Lorem Ipsum is simply dummy text of the printing ?</p>
+          <div class="border rounded-[10px] p-4">
+              <!-- Accordion Header 1 -->
+              <div onclick="toggleAccordion('accordion5')" class="cursor-pointer flex items-center">
+                  <span class=" text-black font-bold leading-[150%] text-[23px] ff_Josefin">Lorem Ipsum is simply dummy text of the printing ?</span>
+                  <svg id="icon5" class="w-4 h-4 ml-auto" fill="none" stroke="black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+              <!-- Accordion Content 1 -->
+              <div id="accordion5" class="mt-2 hidden">
+                  <p class=" ff_Josefin text-black opacity-[0.7] font-normal text-[18px]">Yes, your attributes will transfer. Special additional attributes will be added if you're lucky enough in the upgrade process.</p>
+              </div>
           </div>
-        </div>
-       
       </div>
-    </div>
+      </div>
+  </div>
     <!-- footer -->
     <div class="bg-black mt-[48px] lg:mt-[60px]">
       <div class="container xl:max-w-[1140px] mx-auto px-5 xl:px-0 pt-[50px] rounded-[50px]">
@@ -1652,7 +1673,7 @@
             <p class="text-white text-[20px] ff_Josefin text-center font-bold pb-[28px]">Get the latest updates</p>
             <div class="bg-[#3F3F46] flex ps-3 rounded-full flex justify-between w-full sm:w-[432px]">
               <input type="text" class="bg-transparent py-2 w-full outline-none text-white" placeholder="Email address">
-              <button class="bg-white px-8 rounded-r-full ff_Josefin w-[50%] font-semibold text-black">SUBSCRIBE</button>
+              <button class="bg-white px-8 rounded-r-full ff_Josefin min-w-[50%] font-semibold text-black">SUBSCRIBE</button>
             </div>
             <div class="flex gap-3 pt-[34px] justify-center">
               <a href="#"><img class="h-[28px] w-[28px]" src="./assets/images/twitter.png" alt="twitter"></a>
@@ -1672,5 +1693,31 @@
         <p class="text-center ff_Josefin text-[12px]  font-normal opacity-[0.5] text-white pt-[48px] pb-6">© Copyright  2022 Destroyers of Fiat . All Rights Reserved.</p>
       </div>
     </div>
+    <script>
+      let openAccordionId = null;
+  
+      function toggleAccordion(accordionId) {
+          const accordion = document.getElementById(accordionId);
+          const icon = document.getElementById('icon' + accordionId.slice(-1));
+  
+          if (openAccordionId !== null && openAccordionId !== accordionId) {
+              const openAccordion = document.getElementById(openAccordionId);
+              const openIcon = document.getElementById('icon' + openAccordionId.slice(-1));
+              openAccordion.style.display = 'none';
+              openIcon.style.transform = 'rotate(0deg)';
+          }
+  
+          if (accordion.style.display === 'block') {
+              accordion.style.display = 'none';
+              icon.style.transform = 'rotate(0deg)';
+              openAccordionId = null;
+          } else {
+              accordion.style.display = 'block';
+              icon.style.transform = 'rotate(180deg)';
+              openAccordionId = accordionId;
+          }
+      }
+  </script>
+  
   </body>
 </html>
